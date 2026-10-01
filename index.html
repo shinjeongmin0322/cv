@@ -1,0 +1,6598 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="청주대학교 경영학과 신정민의 개인 브랜드 포트폴리오"
+  >
+
+  <title>
+    신정민 | SHIN JEONG MIN
+  </title>
+
+
+  <style>
+
+    /* =========================================================
+       ROOT
+    ========================================================= */
+
+    :root {
+
+      --ink: #182126;
+
+      --ink-soft: #222d32;
+
+      --ink-light: #2f3d42;
+
+
+      --paper: #f3f0eb;
+
+      --paper-soft: #eae6df;
+
+      --paper-card: #faf8f4;
+
+
+      --text: #202a2e;
+
+      --sub-text: #687276;
+
+
+      --bronze: #ad8964;
+
+      --bronze-light: #d2b695;
+
+      --bronze-dark: #836446;
+
+
+      --sage: #7d8f87;
+
+      --blue: #72858c;
+
+
+      --line:
+        rgba(31, 43, 48, 0.12);
+
+
+      --shadow:
+        0 25px 70px
+        rgba(24, 34, 38, 0.08);
+
+
+      --radius-xl: 34px;
+
+      --radius-lg: 24px;
+
+      --radius-md: 16px;
+
+
+      --max-width: 1180px;
+
+    }
+
+
+
+    /* =========================================================
+       RESET
+    ========================================================= */
+
+    * {
+
+      margin: 0;
+
+      padding: 0;
+
+      box-sizing: border-box;
+
+    }
+
+
+    html {
+
+      scroll-behavior: smooth;
+
+    }
+
+
+    body {
+
+      font-family:
+        Pretendard,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+
+      background:
+        var(--paper);
+
+
+      color:
+        var(--text);
+
+
+      line-height: 1.75;
+
+
+      overflow-x: hidden;
+
+    }
+
+
+    a {
+
+      color: inherit;
+
+      text-decoration: none;
+
+    }
+
+
+    button {
+
+      border: none;
+
+      font: inherit;
+
+      cursor: pointer;
+
+    }
+
+
+    ::selection {
+
+      background:
+        var(--bronze);
+
+      color: white;
+
+    }
+
+
+
+    /* =========================================================
+       COMMON
+    ========================================================= */
+
+    .container {
+
+      width:
+        min(
+          var(--max-width),
+          calc(100% - 48px)
+        );
+
+
+      margin:
+        0 auto;
+
+    }
+
+
+    .section {
+
+      padding:
+        115px 0;
+
+    }
+
+
+    .section-label {
+
+      display: flex;
+
+      align-items: center;
+
+      gap: 10px;
+
+
+      margin-bottom: 14px;
+
+
+      color:
+        var(--bronze-dark);
+
+
+      font-size: 11px;
+
+      font-weight: 850;
+
+      letter-spacing: 2px;
+
+    }
+
+
+    .section-label::before {
+
+      content: "";
+
+
+      width: 25px;
+
+      height: 1px;
+
+
+      background:
+        var(--bronze);
+
+    }
+
+
+    .section-title {
+
+      max-width:
+        780px;
+
+
+      margin-bottom:
+        48px;
+
+
+      font-size:
+        clamp(
+          34px,
+          5vw,
+          54px
+        );
+
+
+      line-height: 1.16;
+
+
+      letter-spacing:
+        -2.5px;
+
+    }
+
+
+    .section-title em {
+
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+
+      font-style: normal;
+
+      font-weight: 400;
+
+
+      color:
+        var(--bronze-dark);
+
+    }
+
+
+
+    /* =========================================================
+       NAVIGATION
+    ========================================================= */
+
+    .nav-wrapper {
+
+      position: absolute;
+
+
+      top: 0;
+
+      left: 0;
+
+      right: 0;
+
+
+      z-index: 100;
+
+    }
+
+
+    .nav {
+
+      height:
+        86px;
+
+
+      display: flex;
+
+      justify-content:
+        space-between;
+
+      align-items:
+        center;
+
+    }
+
+
+    .brand {
+
+      display: flex;
+
+      align-items: center;
+
+      gap: 11px;
+
+
+      color: white;
+
+    }
+
+
+    .brand-mark {
+
+      width:
+        38px;
+
+      height:
+        38px;
+
+
+      display: grid;
+
+      place-items: center;
+
+
+      border-radius:
+        50%;
+
+
+      border:
+        1px solid
+        rgba(
+          255,
+          255,
+          255,
+          0.17
+        );
+
+
+      background:
+        rgba(
+          255,
+          255,
+          255,
+          0.05
+        );
+
+
+      backdrop-filter:
+        blur(12px);
+
+
+      font-size:
+        10px;
+
+
+      font-weight:
+        900;
+
+    }
+
+
+    .brand-name {
+
+      font-size:
+        13px;
+
+
+      font-weight:
+        850;
+
+
+      letter-spacing:
+        2px;
+
+    }
+
+
+    .nav-links {
+
+      display: flex;
+
+      align-items: center;
+
+      gap: 28px;
+
+
+      list-style: none;
+
+
+      color:
+        rgba(
+          255,
+          255,
+          255,
+          0.63
+        );
+
+
+      font-size:
+        12px;
+
+
+      font-weight:
+        700;
+
+    }
+
+
+    .nav-links a {
+
+      transition:
+        0.2s;
+
+    }
+
+
+    .nav-links a:hover {
+
+      color:
+        white;
+
+    }
+
+
+
+    /* =========================================================
+       HERO
+    ========================================================= */
+
+    .hero {
+
+      min-height:
+        800px;
+
+
+      position:
+        relative;
+
+
+      overflow:
+        hidden;
+
+
+      color:
+        white;
+
+
+      background:
+
+        radial-gradient(
+          circle at 82% 22%,
+          rgba(
+            173,
+            137,
+            100,
+            0.21
+          ),
+          transparent 27%
+        ),
+
+        radial-gradient(
+          circle at 18% 79%,
+          rgba(
+            107,
+            132,
+            136,
+            0.12
+          ),
+          transparent 29%
+        ),
+
+        linear-gradient(
+          135deg,
+          #151e22 0%,
+          #202c31 55%,
+          #29363b 100%
+        );
+
+    }
+
+
+    .hero::before {
+
+      content: "";
+
+
+      position:
+        absolute;
+
+
+      width:
+        650px;
+
+      height:
+        650px;
+
+
+      top:
+        40px;
+
+      right:
+        -220px;
+
+
+      border-radius:
+        50%;
+
+
+      border:
+        1px solid
+        rgba(
+          255,
+          255,
+          255,
+          0.045
+        );
+
+    }
+
+
+    .hero::after {
+
+      content: "";
+
+
+      position:
+        absolute;
+
+
+      width:
+        420px;
+
+      height:
+        420px;
+
+
+      top:
+        155px;
+
+      right:
+        -95px;
+
+
+      border-radius:
+        50%;
+
+
+      border:
+        1px solid
+        rgba(
+          255,
+          255,
+          255,
+          0.04
+        );
+
+    }
+
+
+    .hero-grid {
+
+      min-height:
+        800px;
+
+
+      position:
+        relative;
+
+
+      z-index:
+        2;
+
+
+      display: grid;
+
+
+      grid-template-columns:
+        1.08fr
+        0.92fr;
+
+
+      gap:
+        74px;
+
+
+      align-items:
+        center;
+
+
+      padding-top:
+        82px;
+
+    }
+
+
+
+    /* =========================================================
+       HERO TEXT
+    ========================================================= */
+
+    .hero-eyebrow {
+
+      display:
+        inline-flex;
+
+
+      align-items:
+        center;
+
+
+      gap:
+        9px;
+
+
+      padding:
+        7px 13px;
+
+
+      margin-bottom:
+        28px;
+
+
+      border-radius:
+        50px;
+
+
+      border:
+        1px solid
+        rgba(
+          255,
+          255,
+          255,
+          0.11
+        );
+
+
+      background:
+        rgba(
+          255,
+          255,
+          255,
+          0.04
+        );
+
+
+      color:
+        rgba(
+          255,
+          255,
+          255,
+          0.72
+        );
+
+
+      font-size:
+        11px;
+
+
+      font-weight:
+        750;
+
+
+      letter-spacing:
+        1.4px;
+
+    }
+
+
+    .hero-dot {
+
+      width:
+        7px;
+
+      height:
+        7px;
+
+
+      border-radius:
+        50%;
+
+
+      background:
+        var(--bronze-light);
+
+
+      box-shadow:
+
+        0 0 0 5px
+
+        rgba(
+          210,
+          182,
+          149,
+          0.08
+        );
+
+    }
+
+
+    .hero h1 {
+
+      margin-bottom:
+        24px;
+
+
+      font-size:
+        clamp(
+          64px,
+          9vw,
+          103px
+        );
+
+
+      line-height:
+        0.92;
+
+
+      letter-spacing:
+        -7px;
+
+    }
+
+
+    .hero h1 span {
+
+      display:
+        block;
+
+
+      margin-top:
+        16px;
+
+
+      font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+
+      color:
+        var(--bronze-light);
+
+
+      font-size:
+        0.26em;
+
+
+      font-weight:
+        400;
+
+
+      letter-spacing:
+        7px;
+
+    }
+
+
+    .hero-copy {
+
+      max-width:
+        650px;
+
+
+      color:
+        rgba(
+          255,
+          255,
+          255,
+          0.67
+        );
+
+
+      font-size:
+        16px;
+
+
+      line-height:
+        1.87;
+
+    }
+
+
+    .hero-copy strong {
+
+      color:
+        white;
+
+    }
+
+
+    .hero-actions {
+
+      display:
+        flex;
+
+
+      flex-wrap:
+        wrap;
+
+
+      gap:
+        12px;
+
+
+      margin-top:
+        34px;
+
+    }
+
+
+    .button {
+
+      min-height:
+        49px;
+
+
+      padding:
+        0 20px;
+
+
+      display:
+        inline-flex;
+
+
+      justify-content:
+        center;
+
+
+      align-items:
+        center;
+
+
+      gap:
+        9px;
+
+
+      border-radius:
+        50px;
+
+
+      font-size:
+        13px;
+
+
+      font-weight:
+        800;
+
+
+      transition:
+        0.25s;
+
+    }
+
+
+    .button-main {
+
+      background:
+        #f1ede6;
+
+
+      color:
+        var(--ink);
+
+    }
+
+
+    .button-sub {
+
+      color:
+        rgba(
+          255,
+          255,
+          255,
+          0.84
+        );
+
+
+      background:
+        rgba(
+          255,
+          255,
+          255,
+          0.035
+        );
+
+
+      border:
+        1px solid
+        rgba(
+          255,
+          255,
+          255,
+          0.13
+        );
+
+    }
+
+
+    .button:hover {
+
+      transform:
+        translateY(-3px);
+
+    }
+
+
+
+    /* =========================================================
+       PROFILE VISUAL
+    ========================================================= */
+
+    .profile-visual {
+
+      min-height:
+        470px;
+
+
+      display:
+        flex;
+
+
+      justify-content:
+        center;
+
+
+      align-items:
+        center;
+
+    }
+
+
+    .visual-orbit {
+
+      width:
+        400px;
+
+      height:
+        400px;
+
+
+      position:
+        relative;
+
+
+      display:
+        grid;
+
+
+      place-items:
+        center;
+
+
+      border-radius:
+        50%;
+
+
+      border:
+        1px solid
+        rgba(
+          255,
+          255,
+          255,
+          0.08
+        );
+
+    }
+
+
+    .visual-orbit::before {
+
+      content: "";
+
+
+      position:
+        absolute;
+
+
+      inset:
+        42px;
+
+
+      border-radius:
+        50%;
+
+
+      border:
+        1px dashed
+        rgba(
+          255,
+          255,
+          255,
+          0.07
+        );
+
+    }
+
+
+    .visual-orbit::after {
+
+      content: "";
+
+
+      position:
+        absolute;
+
+
+      inset:
+        92px;
+
+
+      border-radius:
+        50%;
+
+
+      background:
+
+        radial-gradient(
+          circle at 40% 30%,
+          rgba(
+            255,
+            255,
+            255,
+            0.12
+          ),
+          transparent 35%
+        ),
+
+        linear-gradient(
+          145deg,
+          rgba(
+            255,
+            255,
+            255,
+            0.08
+          ),
+          rgba(
+            255,
+            255,
+            255,
+            0.02
+          )
+        );
+
+
+      border:
+        1px solid
+        rgba(
+          255,
+          255,
+          255,
+          0.10
+        );
+
+
+      box-shadow:
+
+        0 40px 80px
+        rgba(
+          0,
+          0,
+          0,
+          0.20
+        );
+
+    }
+
+
+
+    /* =========================================================
+       INLINE SVG IMAGE
+    ========================================================= */
+
+    .brand-image {
+
+      width:
+        238px;
+
+      height:
+        238px;
+
+
+      position:
+        relative;
+
+
+      z-index:
+        4;
+
+
+      filter:
+
+        drop-shadow(
+          0 20px 30px
+          rgba(
+            0,
+            0,
+            0,
+            0.15
+          )
+        );
+
+    }
+
+
+    .profile-tag {
+
+      position:
+        absolute;
+
+
+      z-index:
+        5;
+
+
+      display:
+        flex;
+
+
+      align-items:
+        center;
+
+
+      gap:
+        8px;
+
+
+      padding:
+        9px 13px;
+
+
+      border-radius:
+        50px;
+
+
+      background:
+        rgba(
+          25,
+          35,
+          39,
+          0.76
+        );
+
+
+      border:
+        1px solid
+        rgba(
+          255,
+          255,
+          255,
+          0.10
+        );
+
+
+      backdrop-filter:
+        blur(12px);
+
+
+      color:
+        rgba(
+          255,
+          255,
+          255,
+          0.77
+        );
+
+
+      font-size:
+        10px;
+
+
+      font-weight:
+        800;
+
+
+      white-space:
+        nowrap;
+
+    }
+
+
+    .profile-tag span {
+
+      width:
+        7px;
+
+      height:
+        7px;
+
+
+      border-radius:
+        50%;
+
+
+      background:
+        var(--bronze-light);
+
+    }
+
+
+    .tag-finance {
+
+      top:
+        35px;
+
+      left:
+        -5px;
+
+    }
+
+
+    .tag-manager {
+
+      right:
+        -28px;
+
+      top:
+        112px;
+
+    }
+
+
+    .tag-license {
+
+      left:
+        -36px;
+
+      bottom:
+        105px;
+
+    }
+
+
+    .tag-growth {
+
+      right:
+        16px;
+
+      bottom:
+        23px;
+
+    }
+
+
+
+    /* =========================================================
+       SNAPSHOT
+    ========================================================= */
+
+    .snapshot-wrapper {
+
+      position:
+        relative;
+
+
+      z-index:
+        10;
+
+
+      margin-top:
+        -66px;
+
+    }
+
+
+    .snapshot {
+
+      display:
+        grid;
+
+
+      grid-template-columns:
+        repeat(
+          4,
+          1fr
+        );
+
+
+      overflow:
+        hidden;
+
+
+      border-radius:
+        24px;
+
+
+      background:
+        rgba(
+          250,
+          248,
+          244,
+          0.97
+        );
+
+
+      border:
+        1px solid
+        rgba(
+          255,
+          255,
+          255,
+          0.76
+        );
+
+
+      box-shadow:
+
+        0 25px 70px
+
+        rgba(
+          20,
+          30,
+          34,
+          0.13
+        );
+
+
+      backdrop-filter:
+        blur(15px);
+
+    }
+
+
+    .snapshot-item {
+
+      position:
+        relative;
+
+
+      padding:
+        28px 27px 26px;
+
+    }
+
+
+    .snapshot-item:not(:last-child)::after {
+
+      content: "";
+
+
+      position:
+        absolute;
+
+
+      top:
+        27px;
+
+      bottom:
+        27px;
+
+      right:
+        0;
+
+
+      width:
+        1px;
+
+
+      background:
+        var(--line);
+
+    }
+
+
+    .snapshot-label {
+
+      margin-bottom:
+        6px;
+
+
+      color:
+        #8b9190;
+
+
+      font-size:
+        9px;
+
+
+      font-weight:
+        900;
+
+
+      letter-spacing:
+        1.4px;
+
+    }
+
+
+    .snapshot-value {
+
+      color:
+        var(--ink);
+
+
+      font-size:
+        19px;
+
+
+      font-weight:
+        850;
+
+
+      letter-spacing:
+        -0.7px;
+
+    }
+
+
+    .snapshot-small {
+
+      margin-top:
+        4px;
+
+
+      color:
+        #8c9391;
+
+
+      font-size:
+        11px;
+
+    }
+
+
+
+    /* =========================================================
+       ABOUT
+    ========================================================= */
+
+    .about-grid {
+
+      display:
+        grid;
+
+
+      grid-template-columns:
+        0.83fr
+        1.17fr;
+
+
+      gap:
+        100px;
+
+
+      align-items:
+        start;
+
+    }
+
+
+    .about-side {
+
+      position:
+        sticky;
+
+
+      top:
+        40px;
+
+    }
+
+
+    .about-number {
+
+      margin-bottom:
+        22px;
+
+
+      color:
+        rgba(
+          173,
+          137,
+          100,
+          0.17
+        );
+
+
+      font-family:
+        Georgia,
+        serif;
+
+
+      font-size:
+        100px;
+
+
+      line-height:
+        0.9;
+
+    }
+
+
+    .about-side p {
+
+      max-width:
+        330px;
+
+
+      color:
+        var(--sub-text);
+
+
+      font-size:
+        14px;
+
+    }
+
+
+    .about-story {
+
+      color:
+        #596266;
+
+
+      font-size:
+        17px;
+
+    }
+
+
+    .about-story p + p {
+
+      margin-top:
+        25px;
+
+    }
+
+
+    .about-story strong {
+
+      color:
+        var(--ink);
+
+    }
+
+
+    .identity-list {
+
+      margin-top:
+        46px;
+
+
+      border-top:
+        1px solid
+        var(--line);
+
+    }
+
+
+    .identity-row {
+
+      display:
+        grid;
+
+
+      grid-template-columns:
+        130px
+        1fr;
+
+
+      gap:
+        24px;
+
+
+      padding:
+        16px 0;
+
+
+      border-bottom:
+        1px solid
+        var(--line);
+
+    }
+
+
+    .identity-row dt {
+
+      color:
+        #969b99;
+
+
+      font-size:
+        9px;
+
+
+      font-weight:
+        900;
+
+
+      letter-spacing:
+        1.4px;
+
+    }
+
+
+    .identity-row dd {
+
+      font-size:
+        14px;
+
+
+      font-weight:
+        750;
+
+    }
+
+
+
+    /* =========================================================
+       CORE COMPETENCY
+    ========================================================= */
+
+    .competency-section {
+
+      background:
+
+        linear-gradient(
+          180deg,
+          #e9e5de,
+          #efebe4
+        );
+
+    }
+
+
+    .competency-intro {
+
+      display:
+        grid;
+
+
+      grid-template-columns:
+        1fr
+        0.72fr;
+
+
+      gap:
+        70px;
+
+
+      margin-bottom:
+        42px;
+
+    }
+
+
+    .competency-intro p {
+
+      align-self:
+        end;
+
+
+      color:
+        var(--sub-text);
+
+
+      font-size:
+        14px;
+
+    }
+
+
+    .competency-grid {
+
+      display:
+        grid;
+
+
+      grid-template-columns:
+        repeat(
+          3,
+          1fr
+        );
+
+
+      gap:
+        17px;
+
+    }
+
+
+    .competency-card {
+
+      min-height:
+        315px;
+
+
+      padding:
+        29px;
+
+
+      display:
+        flex;
+
+
+      flex-direction:
+        column;
+
+
+      border-radius:
+        24px;
+
+
+      background:
+        rgba(
+          250,
+          248,
+          244,
+          0.82
+        );
+
+
+      border:
+        1px solid
+        rgba(
+          33,
+          44,
+          48,
+          0.08
+        );
+
+
+      transition:
+        0.25s;
+
+    }
+
+
+    .competency-card:hover {
+
+      transform:
+        translateY(-6px);
+
+
+      background:
+        var(--paper-card);
+
+
+      box-shadow:
+        var(--shadow);
+
+    }
+
+
+    .competency-top {
+
+      display:
+        flex;
+
+
+      justify-content:
+        space-between;
+
+
+      align-items:
+        center;
+
+
+      margin-bottom:
+        45px;
+
+    }
+
+
+    .competency-icon {
+
+      width:
+        48px;
+
+      height:
+        48px;
+
+
+      display:
+        grid;
+
+
+      place-items:
+        center;
+
+
+      border-radius:
+        14px;
+
+
+      background:
+        #e4ddd3;
+
+
+      font-size:
+        22px;
+
+    }
+
+
+    .competency-number {
+
+      color:
+        #a9a29b;
+
+
+      font-family:
+        Georgia,
+        serif;
+
+
+      font-size:
+        20px;
+
+    }
+
+
+    .competency-card h3 {
+
+      margin-bottom:
+        10px;
+
+
+      font-size:
+        20px;
+
+
+      line-height:
+        1.35;
+
+
+      letter-spacing:
+        -0.7px;
+
+    }
+
+
+    .competency-card p {
+
+      color:
+        var(--sub-text);
+
+
+      font-size:
+        13px;
+
+    }
+
+
+    .competency-proof {
+
+      margin-top:
+        auto;
+
+
+      padding-top:
+        16px;
+
+
+      color:
+        var(--bronze-dark);
+
+
+      border-top:
+        1px solid
+        var(--line);
+
+
+      font-size:
+        10px;
+
+
+      font-weight:
+        850;
+
+
+      letter-spacing:
+        0.3px;
+
+    }
+
+
+
+    /* =========================================================
+       CAREER DIRECTION
+    ========================================================= */
+
+    .career-grid {
+
+      display:
+        grid;
+
+
+      grid-template-columns:
+        repeat(
+          2,
+          1fr
+        );
+
+
+      gap:
+        20px;
+
+    }
+
+
+    .career-card {
+
+      min-height:
+        360px;
+
+
+      position:
+        relative;
+
+
+      overflow:
+        hidden;
+
+
+      padding:
+        38px;
+
+
+      border-radius:
+        30px;
+
+
+      transition:
+        0.28s;
+
+    }
+
+
+    .career-card:hover {
+
+      transform:
+        translateY(-7px);
+
+
+      box-shadow:
+        var(--shadow);
+
+    }
+
+
+    .career-dark {
+
+      color:
+        white;
+
+
+      background:
+
+        radial-gradient(
+          circle at 86% 10%,
+          rgba(
+            210,
+            182,
+            149,
+            0.16
+          ),
+          transparent 34%
+        ),
+
+        #202b30;
+
+    }
+
+
+    .career-light {
+
+      background:
+        var(--paper-card);
+
+
+      border:
+        1px solid
+        rgba(
+          33,
+          44,
+          48,
+          0.09
+        );
+
+    }
+
+
+    .career-head {
+
+      display:
+        flex;
+
+
+      justify-content:
+        space-between;
+
+
+      align-items:
+        flex-start;
+
+
+      margin-bottom:
+        72px;
+
+    }
+
+
+    .career-icon {
+
+      width:
+        50px;
+
+      height:
+        50px;
+
+
+      display:
+        grid;
+
+
+      place-items:
+        center;
+
+
+      border-radius:
+        15px;
+
+
+      font-size:
+        22px;
+
+    }
+
+
+    .career-dark
+    .career-icon {
+
+      background:
+        rgba(
+          255,
+          255,
+          255,
+          0.07
+        );
+
+
+      border:
+        1px solid
+        rgba(
+          255,
+          255,
+          255,
+          0.08
+        );
+
+    }
+
+
+    .career-light
+    .career-icon {
+
+      background:
+        #eae4db;
+
+    }
+
+
+    .external-arrow {
+
+      width:
+        36px;
+
+      height:
+        36px;
+
+
+      display:
+        grid;
+
+
+      place-items:
+        center;
+
+
+      border-radius:
+        50%;
+
+
+      border:
+        1px solid
+        currentColor;
+
+
+      opacity:
+        0.28;
+
+
+      transition:
+        0.25s;
+
+    }
+
+
+    .career-card:hover
+    .external-arrow {
+
+      transform:
+        rotate(45deg);
+
+
+      opacity:
+        0.8;
+
+    }
+
+
+    .career-label {
+
+      margin-bottom:
+        8px;
+
+
+      font-size:
+        9px;
+
+
+      font-weight:
+        900;
+
+
+      letter-spacing:
+        1.5px;
+
+    }
+
+
+    .career-dark
+    .career-label {
+
+      color:
+        var(--bronze-light);
+
+    }
+
+
+    .career-light
+    .career-label {
+
+      color:
+        var(--bronze-dark);
+
+    }
+
+
+    .career-card h3 {
+
+      margin-bottom:
+        13px;
+
+
+      font-size:
+        27px;
+
+
+      letter-spacing:
+        -1px;
+
+    }
+
+
+    .career-card p {
+
+      font-size:
+        14px;
+
+
+      line-height:
+        1.82;
+
+    }
+
+
+    .career-dark p {
+
+      color:
+        rgba(
+          255,
+          255,
+          255,
+          0.59
+        );
+
+    }
+
+
+    .career-light p {
+
+      color:
+        var(--sub-text);
+
+    }
+
+
+
+    /* =========================================================
+       JOURNEY
+    ========================================================= */
+
+    .journey-grid {
+
+      display:
+        grid;
+
+
+      grid-template-columns:
+        0.70fr
+        1.30fr;
+
+
+      gap:
+        90px;
+
+    }
+
+
+    .journey-side {
+
+      position:
+        sticky;
+
+
+      top:
+        40px;
+
+
+      height:
+        max-content;
+
+    }
+
+
+    .journey-message {
+
+      margin-top:
+        34px;
+
+
+      padding:
+        28px;
+
+
+      border-radius:
+        20px;
+
+
+      background:
+        var(--ink);
+
+
+      color:
+        white;
+
+    }
+
+
+    .journey-message strong {
+
+      display:
+        block;
+
+
+      margin-bottom:
+        8px;
+
+
+      color:
+        var(--bronze-light);
+
+
+      font-family:
+        Georgia,
+        serif;
+
+
+      font-size:
+        34px;
+
+
+      font-weight:
+        400;
+
+
+      line-height:
+        1;
+
+    }
+
+
+    .journey-message p {
+
+      color:
+        rgba(
+          255,
+          255,
+          255,
+          0.64
+        );
+
+
+      font-size:
+        13px;
+
+    }
+
+
+    .timeline {
+
+      position:
+        relative;
+
+
+      padding-left:
+        40px;
+
+    }
+
+
+    .timeline::before {
+
+      content: "";
+
+
+      position:
+        absolute;
+
+
+      left:
+        7px;
+
+
+      top:
+        13px;
+
+
+      bottom:
+        15px;
+
+
+      width:
+        1px;
+
+
+      background:
+        rgba(
+          48,
+          60,
+          64,
+          0.15
+        );
+
+    }
+
+
+    .timeline-item {
+
+      position:
+        relative;
+
+
+      padding-bottom:
+        45px;
+
+    }
+
+
+    .timeline-dot {
+
+      position:
+        absolute;
+
+
+      left:
+        -39px;
+
+
+      top:
+        6px;
+
+
+      width:
+        15px;
+
+
+      height:
+        15px;
+
+
+      border-radius:
+        50%;
+
+
+      background:
+        var(--paper);
+
+
+      border:
+        4px solid
+        var(--bronze);
+
+    }
+
+
+    .timeline-label {
+
+      margin-bottom:
+        7px;
+
+
+      color:
+        var(--bronze-dark);
+
+
+      font-size:
+        9px;
+
+
+      font-weight:
+        900;
+
+
+      letter-spacing:
+        1.4px;
+
+    }
+
+
+    .timeline-item h3 {
+
+      margin-bottom:
+        7px;
+
+
+      font-size:
+        21px;
+
+
+      letter-spacing:
+        -0.6px;
+
+    }
+
+
+    .timeline-item p {
+
+      max-width:
+        620px;
+
+
+      color:
+        var(--sub-text);
+
+
+      font-size:
+        13px;
+
+    }
+
+
+
+    /* =========================================================
+       LIFE
+    ========================================================= */
+
+    .life-section {
+
+      background:
+        #e9e5de;
+
+    }
+
+
+    .life-grid {
+
+      display:
+        grid;
+
+
+      grid-template-columns:
+        1.25fr
+        0.875fr
+        0.875fr;
+
+
+      gap:
+        18px;
+
+    }
+
+
+    .life-card {
+
+      min-height:
+        320px;
+
+
+      display:
+        flex;
+
+
+      flex-direction:
+        column;
+
+
+      padding:
+        29px;
+
+
+      border-radius:
+        25px;
+
+
+      background:
+        rgba(
+          250,
+          248,
+          244,
+          0.84
+        );
+
+
+      border:
+        1px solid
+        rgba(
+          35,
+          45,
+          49,
+          0.08
+        );
+
+
+      transition:
+        0.25s;
+
+    }
+
+
+    .life-card:hover {
+
+      transform:
+        translateY(-5px);
+
+
+      background:
+        var(--paper-card);
+
+    }
+
+
+    .music-card {
+
+      min-height:
+        390px;
+
+
+      color:
+        white;
+
+
+      border:
+        none;
+
+
+      background:
+
+        radial-gradient(
+          circle at 82% 16%,
+          rgba(
+            255,
+            255,
+            255,
+            0.12
+          ),
+          transparent 30%
+        ),
+
+        linear-gradient(
+          145deg,
+          #755e4b,
+          #96775a
+        );
+
+    }
+
+
+    .life-icon {
+
+      width:
+        48px;
+
+      height:
+        48px;
+
+
+      display:
+        grid;
+
+
+      place-items:
+        center;
+
+
+      border-radius:
+        14px;
+
+
+      background:
+        rgba(
+          33,
+          43,
+          47,
+          0.06
+        );
+
+
+      font-size:
+        22px;
+
+    }
+
+
+    .music-card
+    .life-icon {
+
+      background:
+        rgba(
+          255,
+          255,
+          255,
+          0.10
+        );
+
+    }
+
+
+    .life-content {
+
+      margin-top:
+        auto;
+
+    }
+
+
+    .life-label {
+
+      margin-bottom:
+        8px;
+
+
+      font-size:
+        9px;
+
+
+      font-weight:
+        900;
+
+
+      letter-spacing:
+        1.5px;
+
+    }
+
+
+    .music-card
+    .life-label {
+
+      color:
+        #ead8c4;
+
+    }
+
+
+    .life-card h3 {
+
+      margin-bottom:
+        11px;
+
+
+      font-size:
+        22px;
+
+
+      letter-spacing:
+        -0.7px;
+
+    }
+
+
+    .life-card p {
+
+      color:
+        var(--sub-text);
+
+
+      font-size:
+        13px;
+
+    }
+
+
+    .music-card p {
+
+      color:
+        rgba(
+          255,
+          255,
+          255,
+          0.69
+        );
+
+    }
+
+
+    .artist-tags {
+
+      display:
+        flex;
+
+
+      flex-wrap:
+        wrap;
+
+
+      gap:
+        8px;
+
+
+      margin-top:
+        17px;
+
+    }
+
+
+    .artist-tags span {
+
+      padding:
+        6px 10px;
+
+
+      border-radius:
+        50px;
+
+
+      border:
+        1px solid
+        rgba(
+          255,
+          255,
+          255,
+          0.14
+        );
+
+
+      color:
+        rgba(
+          255,
+          255,
+          255,
+          0.86
+        );
+
+
+      font-size:
+        10px;
+
+
+      font-weight:
+        800;
+
+    }
+
+
+
+    /* =========================================================
+       PHILOSOPHY
+    ========================================================= */
+
+    .philosophy {
+
+      padding:
+        30px 0 110px;
+
+    }
+
+
+    .philosophy-card {
+
+      min-height:
+        450px;
+
+
+      position:
+        relative;
+
+
+      overflow:
+        hidden;
+
+
+      padding:
+        68px;
+
+
+      border-radius:
+        var(--radius-xl);
+
+
+      color:
+        white;
+
+
+      background:
+
+        radial-gradient(
+          circle at 82% 20%,
+          rgba(
+            173,
+            137,
+            100,
+            0.17
+          ),
+          transparent 31%
+        ),
+
+        linear-gradient(
+          135deg,
+          #182126,
+          #2a373c
+        );
+
+    }
+
+
+    .philosophy-card::after {
+
+      content:
+        "SJM";
+
+
+      position:
+        absolute;
+
+
+      right:
+        -20px;
+
+
+      bottom:
+        -48px;
+
+
+      color:
+        rgba(
+          255,
+          255,
+          255,
+          0.025
+        );
+
+
+      font-size:
+        180px;
+
+
+      font-weight:
+        900;
+
+
+      letter-spacing:
+        -15px;
+
+    }
+
+
+    .philosophy-label {
+
+      margin-bottom:
+        32px;
+
+
+      color:
+        var(--bronze-light);
+
+
+      font-size:
+        10px;
+
+
+      font-weight:
+        900;
+
+
+      letter-spacing:
+        2px;
+
+    }
+
+
+    .philosophy-card blockquote {
+
+      max-width:
+        880px;
+
+
+      position:
+        relative;
+
+
+      z-index:
+        1;
+
+
+      font-size:
+        clamp(
+          36px,
+          6vw,
+          66px
+        );
+
+
+      line-height:
+        1.17;
+
+
+      letter-spacing:
+        -3px;
+
+
+      font-weight:
+        850;
+
+    }
+
+
+    .philosophy-card
+    blockquote em {
+
+      color:
+        var(--bronze-light);
+
+
+      font-family:
+        Georgia,
+        serif;
+
+
+      font-style:
+        normal;
+
+
+      font-weight:
+        400;
+
+    }
+
+
+    .philosophy-note {
+
+      max-width:
+        640px;
+
+
+      position:
+        relative;
+
+
+      z-index:
+        1;
+
+
+      margin-top:
+        28px;
+
+
+      color:
+        rgba(
+          255,
+          255,
+          255,
+          0.50
+        );
+
+
+      font-size:
+        13px;
+
+    }
+
+
+
+    /* =========================================================
+       CONTACT
+    ========================================================= */
+
+    .contact-section {
+
+      padding:
+        95px 0 45px;
+
+
+      text-align:
+        center;
+
+    }
+
+
+    .contact-section
+    .section-label {
+
+      justify-content:
+        center;
+
+    }
+
+
+    .contact-title {
+
+      max-width:
+        730px;
+
+
+      margin:
+        0 auto 18px;
+
+
+      font-size:
+        clamp(
+          36px,
+          5vw,
+          54px
+        );
+
+
+      line-height:
+        1.15;
+
+
+      letter-spacing:
+        -2.5px;
+
+    }
+
+
+    .contact-copy {
+
+      max-width:
+        590px;
+
+
+      margin:
+        0 auto;
+
+
+      color:
+        var(--sub-text);
+
+
+      font-size:
+        14px;
+
+    }
+
+
+    .contact-grid {
+
+      max-width:
+        900px;
+
+
+      margin:
+        46px auto 0;
+
+
+      display:
+        grid;
+
+
+      grid-template-columns:
+        repeat(
+          3,
+          1fr
+        );
+
+
+      gap:
+        12px;
+
+    }
+
+
+    .contact-card {
+
+      padding:
+        22px 16px;
+
+
+      border-radius:
+        17px;
+
+
+      background:
+        var(--paper-card);
+
+
+      border:
+        1px solid
+        var(--line);
+
+
+      transition:
+        0.25s;
+
+    }
+
+
+    .contact-card:hover {
+
+      transform:
+        translateY(-5px);
+
+
+      border-color:
+        rgba(
+          173,
+          137,
+          100,
+          0.45
+        );
+
+
+      box-shadow:
+
+        0 18px 40px
+
+        rgba(
+          34,
+          45,
+          48,
+          0.07
+        );
+
+    }
+
+
+    .contact-icon {
+
+      margin-bottom:
+        7px;
+
+
+      font-size:
+        21px;
+
+    }
+
+
+    .contact-card small {
+
+      display:
+        block;
+
+
+      margin-bottom:
+        3px;
+
+
+      color:
+        #989d9b;
+
+
+      font-size:
+        9px;
+
+
+      font-weight:
+        900;
+
+
+      letter-spacing:
+        1.3px;
+
+    }
+
+
+    .contact-card strong {
+
+      font-size:
+        13px;
+
+    }
+
+
+
+    /* =========================================================
+       GREETING
+    ========================================================= */
+
+    .greeting-area {
+
+      margin-top:
+        55px;
+
+
+      display:
+        flex;
+
+
+      flex-direction:
+        column;
+
+
+      justify-content:
+        center;
+
+
+      align-items:
+        center;
+
+    }
+
+
+    .greeting-button {
+
+      min-width:
+        190px;
+
+
+      padding:
+        15px 28px;
+
+
+      border-radius:
+        50px;
+
+
+      color:
+        white;
+
+
+      background:
+        var(--ink);
+
+
+      font-size:
+        14px;
+
+
+      font-weight:
+        850;
+
+
+      box-shadow:
+
+        0 14px 34px
+
+        rgba(
+          24,
+          33,
+          38,
+          0.15
+        );
+
+
+      transition:
+        0.25s;
+
+    }
+
+
+    .greeting-button:hover {
+
+      transform:
+        translateY(-3px);
+
+
+      background:
+        var(--ink-light);
+
+    }
+
+
+    .greeting-button:active {
+
+      transform:
+        scale(0.97);
+
+    }
+
+
+    .greeting-result {
+
+      min-height:
+        62px;
+
+
+      margin-top:
+        17px;
+
+
+      opacity:
+        0;
+
+
+      transform:
+        translateY(8px);
+
+
+      transition:
+        0.3s;
+
+    }
+
+
+    .greeting-result.visible {
+
+      opacity:
+        1;
+
+
+      transform:
+        translateY(0);
+
+    }
+
+
+    .greeting-count {
+
+      color:
+        var(--bronze-dark);
+
+
+      font-size:
+        13px;
+
+
+      font-weight:
+        850;
+
+    }
+
+
+    .greeting-message {
+
+      margin-top:
+        2px;
+
+
+      color:
+        var(--sub-text);
+
+
+      font-size:
+        13px;
+
+    }
+
+
+
+    /* =========================================================
+       FOOTER
+    ========================================================= */
+
+    footer {
+
+      margin-top:
+        60px;
+
+
+      padding:
+        45px 0;
+
+
+      background:
+        var(--ink);
+
+
+      color:
+        rgba(
+          255,
+          255,
+          255,
+          0.48
+        );
+
+
+      text-align:
+        center;
+
+    }
+
+
+    .footer-name {
+
+      margin-bottom:
+        18px;
+
+
+      color:
+        white;
+
+
+      font-size:
+        14px;
+
+
+      font-weight:
+        900;
+
+
+      letter-spacing:
+        3px;
+
+    }
+
+
+    .footer-contact {
+
+      display:
+        flex;
+
+
+      justify-content:
+        center;
+
+
+      align-items:
+        center;
+
+
+      flex-wrap:
+        wrap;
+
+
+      gap:
+        10px 24px;
+
+
+      margin-bottom:
+        20px;
+
+
+      font-size:
+        12px;
+
+    }
+
+
+    .footer-contact a {
+
+      transition:
+        0.2s;
+
+    }
+
+
+    .footer-contact a:hover {
+
+      color:
+        var(--bronze-light);
+
+    }
+
+
+    .copyright {
+
+      padding-top:
+        18px;
+
+
+      border-top:
+        1px solid
+        rgba(
+          255,
+          255,
+          255,
+          0.08
+        );
+
+
+      font-size:
+        9px;
+
+
+      letter-spacing:
+        1.4px;
+
+    }
+
+
+
+    /* =========================================================
+       REVEAL
+    ========================================================= */
+
+    .reveal {
+
+      opacity:
+        0;
+
+
+      transform:
+        translateY(24px);
+
+
+      transition:
+
+        opacity
+        0.7s ease,
+
+        transform
+        0.7s ease;
+
+    }
+
+
+    .reveal.visible {
+
+      opacity:
+        1;
+
+
+      transform:
+        none;
+
+    }
+
+
+
+    /* =========================================================
+       TABLET
+    ========================================================= */
+
+    @media
+    (max-width: 960px) {
+
+
+      .hero-grid {
+
+        grid-template-columns:
+          1fr;
+
+
+        padding-top:
+          145px;
+
+
+        padding-bottom:
+          135px;
+
+      }
+
+
+      .profile-visual {
+
+        justify-content:
+          flex-start;
+
+      }
+
+
+      .visual-orbit {
+
+        transform:
+          scale(0.87);
+
+
+        transform-origin:
+          left center;
+
+      }
+
+
+      .snapshot {
+
+        grid-template-columns:
+          repeat(
+            2,
+            1fr
+          );
+
+      }
+
+
+      .snapshot-item:nth-child(2)::after {
+
+        display:
+          none;
+
+      }
+
+
+      .snapshot-item:nth-child(1),
+
+      .snapshot-item:nth-child(2) {
+
+        border-bottom:
+          1px solid
+          var(--line);
+
+      }
+
+
+      .about-grid,
+
+      .journey-grid,
+
+      .competency-intro {
+
+        grid-template-columns:
+          1fr;
+
+
+        gap:
+          45px;
+
+      }
+
+
+      .about-side,
+
+      .journey-side {
+
+        position:
+          static;
+
+      }
+
+
+      .competency-grid {
+
+        grid-template-columns:
+          repeat(
+            2,
+            1fr
+          );
+
+      }
+
+
+      .career-grid {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+
+      .life-grid {
+
+        grid-template-columns:
+          1fr 1fr;
+
+      }
+
+
+      .music-card {
+
+        grid-column:
+          1 / -1;
+
+      }
+
+    }
+
+
+
+    /* =========================================================
+       MOBILE
+    ========================================================= */
+
+    @media
+    (max-width: 680px) {
+
+
+      .container {
+
+        width:
+          min(
+            100% - 34px,
+            var(--max-width)
+          );
+
+      }
+
+
+      .nav {
+
+        height:
+          72px;
+
+      }
+
+
+      .nav-links {
+
+        display:
+          none;
+
+      }
+
+
+      .hero {
+
+        min-height:
+          auto;
+
+      }
+
+
+      .hero-grid {
+
+        min-height:
+          auto;
+
+
+        padding-top:
+          120px;
+
+
+        padding-bottom:
+          120px;
+
+
+        gap:
+          55px;
+
+      }
+
+
+      .hero h1 {
+
+        font-size:
+          63px;
+
+
+        letter-spacing:
+          -5px;
+
+      }
+
+
+      .hero h1 span {
+
+        font-size:
+          17px;
+
+
+        letter-spacing:
+          4px;
+
+      }
+
+
+      .hero-copy {
+
+        font-size:
+          15px;
+
+      }
+
+
+      .hero-actions {
+
+        flex-direction:
+          column;
+
+      }
+
+
+      .button {
+
+        width:
+          100%;
+
+      }
+
+
+      .profile-visual {
+
+        min-height:
+          320px;
+
+      }
+
+
+      .visual-orbit {
+
+        width:
+          350px;
+
+        height:
+          350px;
+
+
+        transform:
+          scale(0.82);
+
+      }
+
+
+      .brand-image {
+
+        width:
+          210px;
+
+        height:
+          210px;
+
+      }
+
+
+      .profile-tag {
+
+        display:
+          none;
+
+      }
+
+
+      .snapshot-wrapper {
+
+        margin-top:
+          -53px;
+
+      }
+
+
+      .snapshot {
+
+        grid-template-columns:
+          1fr 1fr;
+
+      }
+
+
+      .snapshot-item {
+
+        padding:
+          20px 17px;
+
+      }
+
+
+      .snapshot-value {
+
+        font-size:
+          16px;
+
+      }
+
+
+      .section {
+
+        padding:
+          84px 0;
+
+      }
+
+
+      .section-title {
+
+        margin-bottom:
+          34px;
+
+
+        font-size:
+          36px;
+
+
+        letter-spacing:
+          -1.8px;
+
+      }
+
+
+      .about-number {
+
+        font-size:
+          72px;
+
+      }
+
+
+      .about-story {
+
+        font-size:
+          16px;
+
+      }
+
+
+      .identity-row {
+
+        grid-template-columns:
+          96px 1fr;
+
+
+        gap:
+          14px;
+
+      }
+
+
+      .competency-grid {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+
+      .career-card {
+
+        min-height:
+          330px;
+
+
+        padding:
+          28px;
+
+      }
+
+
+      .life-grid {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+
+      .music-card {
+
+        grid-column:
+          auto;
+
+      }
+
+
+      .philosophy-card {
+
+        min-height:
+          430px;
+
+
+        padding:
+          40px 27px;
+
+
+        border-radius:
+          25px;
+
+      }
+
+
+      .philosophy-card
+      blockquote {
+
+        font-size:
+          39px;
+
+
+        letter-spacing:
+          -2px;
+
+      }
+
+
+      .contact-grid {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+
+      .footer-contact {
+
+        flex-direction:
+          column;
+
+
+        gap:
+          7px;
+
+      }
+
+    }
+
+
+
+    /* =========================================================
+       REDUCED MOTION
+    ========================================================= */
+
+    @media
+    (prefers-reduced-motion: reduce) {
+
+
+      html {
+
+        scroll-behavior:
+          auto;
+
+      }
+
+
+      * {
+
+        transition:
+          none !important;
+
+      }
+
+
+      .reveal {
+
+        opacity:
+          1;
+
+
+        transform:
+          none;
+
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+
+<body>
+
+
+
+  <!-- ======================================================
+       NAVIGATION
+  ======================================================= -->
+
+  <div class="nav-wrapper">
+
+    <nav class="nav container">
+
+
+      <a
+        class="brand"
+        href="#home"
+      >
+
+        <div class="brand-mark">
+          SJM
+        </div>
+
+        <div class="brand-name">
+          SHIN JEONG MIN
+        </div>
+
+      </a>
+
+
+
+      <ul class="nav-links">
+
+        <li>
+          <a href="#about">
+            ABOUT
+          </a>
+        </li>
+
+        <li>
+          <a href="#competency">
+            STRENGTH
+          </a>
+        </li>
+
+        <li>
+          <a href="#career">
+            CAREER
+          </a>
+        </li>
+
+        <li>
+          <a href="#journey">
+            JOURNEY
+          </a>
+        </li>
+
+        <li>
+          <a href="#life">
+            LIFE
+          </a>
+        </li>
+
+        <li>
+          <a href="#contact">
+            CONTACT
+          </a>
+        </li>
+
+      </ul>
+
+    </nav>
+
+  </div>
+
+
+
+  <!-- ======================================================
+       HERO
+  ======================================================= -->
+
+  <header
+    class="hero"
+    id="home"
+  >
+
+
+    <div class="hero-grid container">
+
+
+      <!-- HERO TEXT -->
+
+      <div>
+
+
+        <div class="hero-eyebrow">
+
+          <span class="hero-dot"></span>
+
+          BUSINESS · FINANCE · PERSONAL BRAND
+
+        </div>
+
+
+
+        <h1>
+
+          신정민
+
+          <span>
+            SHIN JEONG MIN
+          </span>
+
+        </h1>
+
+
+
+        <p class="hero-copy">
+
+          청주대학교
+
+          <strong>
+            경영학과 3학년
+          </strong>.
+
+          <br>
+
+          금융시장과 증권산업을 공부하며
+
+          <strong>
+            투자와 자산운용을 직업으로 연결하는 과정
+          </strong>
+
+          을 만들어가고 있습니다.
+
+
+          <br><br>
+
+
+          투자자산운용사,
+          금융사관학교 과정,
+          학업과 프로젝트 경험을 기반으로
+
+          장기적으로는
+
+          <strong>
+            미래에셋증권의 펀드매니저
+          </strong>
+
+          또는
+
+          <strong>
+            금융감독원
+          </strong>
+
+          에서 금융시장을 깊이 이해하는
+          금융 인재로 성장하는 것이 목표입니다.
+
+        </p>
+
+
+
+        <div class="hero-actions">
+
+
+          <a
+            class="button button-main"
+            href="#competency"
+          >
+
+            나의 역량 보기
+
+            ↓
+
+          </a>
+
+
+          <a
+            class="button button-sub"
+            href="#contact"
+          >
+
+            Contact
+
+          </a>
+
+
+        </div>
+
+      </div>
+
+
+
+      <!-- ==================================================
+           PROFILE BRAND IMAGE
+           별도 이미지 파일 없이 SVG로 구성
+      =================================================== -->
+
+      <div class="profile-visual">
+
+
+        <div class="visual-orbit">
+
+
+          <!--
+            금융시장,
+            목표,
+            성장,
+            분석을 의미하는
+            개인 브랜드 이미지
+          -->
+
+          <svg
+            class="brand-image"
+            viewBox="0 0 300 300"
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-label="금융시장과 성장을 상징하는 신정민 개인 브랜드 이미지"
+          >
+
+
+            <defs>
+
+
+              <linearGradient
+                id="circleGradient"
+                x1="0"
+                y1="0"
+                x2="1"
+                y2="1"
+              >
+
+                <stop
+                  offset="0%"
+                  stop-color="#d4b895"
+                />
+
+                <stop
+                  offset="100%"
+                  stop-color="#86684a"
+                />
+
+              </linearGradient>
+
+
+
+              <linearGradient
+                id="chartGradient"
+                x1="0"
+                y1="1"
+                x2="1"
+                y2="0"
+              >
+
+                <stop
+                  offset="0%"
+                  stop-color="#71868b"
+                />
+
+                <stop
+                  offset="100%"
+                  stop-color="#d4b895"
+                />
+
+              </linearGradient>
+
+
+            </defs>
+
+
+
+            <!-- outer ring -->
+
+            <circle
+              cx="150"
+              cy="150"
+              r="122"
+              fill="none"
+              stroke="rgba(255,255,255,0.12)"
+              stroke-width="2"
+            />
+
+
+            <circle
+              cx="150"
+              cy="150"
+              r="98"
+              fill="rgba(255,255,255,0.04)"
+              stroke="rgba(255,255,255,0.10)"
+              stroke-width="1"
+            />
+
+
+
+            <!-- chart -->
+
+            <path
+              d="
+                M68 192
+                L96 165
+                L119 177
+                L148 132
+                L173 145
+                L214 89
+              "
+              fill="none"
+              stroke="url(#chartGradient)"
+              stroke-width="8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+
+
+
+            <!-- points -->
+
+            <circle
+              cx="68"
+              cy="192"
+              r="7"
+              fill="#d4b895"
+            />
+
+            <circle
+              cx="96"
+              cy="165"
+              r="7"
+              fill="#d4b895"
+            />
+
+            <circle
+              cx="119"
+              cy="177"
+              r="7"
+              fill="#d4b895"
+            />
+
+            <circle
+              cx="148"
+              cy="132"
+              r="7"
+              fill="#d4b895"
+            />
+
+            <circle
+              cx="173"
+              cy="145"
+              r="7"
+              fill="#d4b895"
+            />
+
+            <circle
+              cx="214"
+              cy="89"
+              r="9"
+              fill="#f3dfc4"
+            />
+
+
+
+            <!-- target -->
+
+            <circle
+              cx="214"
+              cy="89"
+              r="20"
+              fill="none"
+              stroke="#d4b895"
+              stroke-width="2"
+              opacity="0.55"
+            />
+
+            <circle
+              cx="214"
+              cy="89"
+              r="31"
+              fill="none"
+              stroke="#d4b895"
+              stroke-width="1"
+              opacity="0.20"
+            />
+
+
+
+            <!-- initials -->
+
+            <text
+              x="150"
+              y="235"
+              text-anchor="middle"
+              fill="rgba(255,255,255,0.90)"
+              font-size="30"
+              font-weight="800"
+              font-family="Arial, sans-serif"
+              letter-spacing="3"
+            >
+              SJM
+            </text>
+
+
+            <text
+              x="150"
+              y="256"
+              text-anchor="middle"
+              fill="rgba(255,255,255,0.40)"
+              font-size="9"
+              font-weight="600"
+              font-family="Arial, sans-serif"
+              letter-spacing="3"
+            >
+              FINANCE · GROWTH
+            </text>
+
+
+          </svg>
+
+
+
+          <div class="profile-tag tag-finance">
+
+            <span></span>
+
+            FINANCE
+
+          </div>
+
+
+          <div class="profile-tag tag-manager">
+
+            <span></span>
+
+            FUND MANAGER
+
+          </div>
+
+
+          <div class="profile-tag tag-license">
+
+            <span></span>
+
+            투자자산운용사
+
+          </div>
+
+
+          <div class="profile-tag tag-growth">
+
+            <span></span>
+
+            GROWTH
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </header>
+
+
+
+  <!-- ======================================================
+       SUMMARY
+  ======================================================= -->
+
+  <div class="snapshot-wrapper">
+
+    <div class="snapshot container">
+
+
+      <div class="snapshot-item">
+
+        <div class="snapshot-label">
+          MAJOR
+        </div>
+
+        <div class="snapshot-value">
+          경영학
+        </div>
+
+        <div class="snapshot-small">
+          청주대학교 3학년
+        </div>
+
+      </div>
+
+
+
+      <div class="snapshot-item">
+
+        <div class="snapshot-label">
+          CERTIFICATE
+        </div>
+
+        <div class="snapshot-value">
+          투자자산운용사
+        </div>
+
+        <div class="snapshot-small">
+          금융투자 전문성
+        </div>
+
+      </div>
+
+
+
+      <div class="snapshot-item">
+
+        <div class="snapshot-label">
+          ACADEMIC
+        </div>
+
+        <div class="snapshot-value">
+          4.5 / 4.5
+        </div>
+
+        <div class="snapshot-small">
+          2026년 1학기
+        </div>
+
+      </div>
+
+
+
+      <div class="snapshot-item">
+
+        <div class="snapshot-label">
+          PERSONALITY
+        </div>
+
+        <div class="snapshot-value">
+          ESFP
+        </div>
+
+        <div class="snapshot-small">
+          사람 · 경험 · 실행
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+
+  <!-- ======================================================
+       ABOUT
+  ======================================================= -->
+
+  <section
+    class="section"
+    id="about"
+  >
+
+
+    <div class="container about-grid">
+
+
+      <div class="about-side reveal">
+
+
+        <div class="section-label">
+          01 / ABOUT
+        </div>
+
+
+        <div class="about-number">
+          01
+        </div>
+
+
+        <p>
+
+          한 번의 화려한 결과보다
+          시간이 지나도 남는 실력과 신뢰를
+          만드는 사람이 되고 싶습니다.
+
+        </p>
+
+
+      </div>
+
+
+
+      <div class="about-story reveal">
+
+
+        <h2 class="section-title">
+
+          금융을 좋아하는 것을 넘어,
+
+          <br>
+
+          <em>
+            금융을 잘하는 사람
+          </em>
+
+          이 되고 싶습니다.
+
+        </h2>
+
+
+
+        <p>
+
+          저는
+
+          <strong>
+            청주에서 성장한
+            경영학 전공 대학생 신정민
+          </strong>
+
+          입니다.
+
+          기업과 금융시장의 움직임을
+          분석하는 과정에 흥미를 느끼며,
+
+          특히
+
+          <strong>
+            증권시장 · 자산운용 ·
+            투자전략 · 거시경제
+          </strong>
+
+          에 관심이 많습니다.
+
+        </p>
+
+
+
+        <p>
+
+          관심을 실제 역량으로 만들기 위해
+
+          <strong>
+            투자자산운용사 자격을 취득
+          </strong>
+
+          했으며,
+
+          금융사관학교 교육과정을 통해
+          국제경제와 금융시장에 대한
+          이해를 넓혀가고 있습니다.
+
+        </p>
+
+
+
+        <p>
+
+          또한 학업 과정에서 시행착오를 경험한 뒤
+          학습방식과 목표를 다시 설계해
+
+          <strong>
+            2026년 1학기 4.5 / 4.5
+          </strong>
+
+          의 성적을 달성했습니다.
+
+          저는 단순히 처음부터 잘하는 것보다
+          부족한 점을 발견하고
+          개선하여 결과를 만들어내는 능력을
+          중요하게 생각합니다.
+
+        </p>
+
+
+
+        <dl class="identity-list">
+
+
+          <div class="identity-row">
+
+            <dt>
+              NAME
+            </dt>
+
+            <dd>
+              신정민 · SHIN JEONG MIN
+            </dd>
+
+          </div>
+
+
+          <div class="identity-row">
+
+            <dt>
+              HOMETOWN
+            </dt>
+
+            <dd>
+              충청북도 청주
+            </dd>
+
+          </div>
+
+
+          <div class="identity-row">
+
+            <dt>
+              UNIVERSITY
+            </dt>
+
+            <dd>
+              청주대학교 경영학과 3학년
+            </dd>
+
+          </div>
+
+
+          <div class="identity-row">
+
+            <dt>
+              INTEREST
+            </dt>
+
+            <dd>
+              증권 · 투자 · 자산운용 · 거시경제
+            </dd>
+
+          </div>
+
+
+          <div class="identity-row">
+
+            <dt>
+              CAREER
+            </dt>
+
+            <dd>
+              미래에셋증권 펀드매니저 · 금융감독원
+            </dd>
+
+          </div>
+
+
+          <div class="identity-row">
+
+            <dt>
+              MBTI
+            </dt>
+
+            <dd>
+              ESFP
+            </dd>
+
+          </div>
+
+
+        </dl>
+
+
+      </div>
+
+
+    </div>
+
+
+  </section>
+
+
+
+  <!-- ======================================================
+       CORE COMPETENCY
+  ======================================================= -->
+
+  <section
+    class="section competency-section"
+    id="competency"
+  >
+
+
+    <div class="container">
+
+
+      <div class="competency-intro reveal">
+
+
+        <div>
+
+
+          <div class="section-label">
+            02 / CORE COMPETENCY
+          </div>
+
+
+          <h2 class="section-title">
+
+            관심을 말하는 것보다
+
+            <br>
+
+            <em>
+              근거로 보여주는 사람.
+            </em>
+
+          </h2>
+
+
+        </div>
+
+
+
+        <p>
+
+          아직 금융회사에서의 실무 경력보다
+          성장 과정이 더 긴 대학생입니다.
+
+          대신 자격, 학업, 분석 훈련,
+          팀 활동과 조직 경험을 통해
+          금융권에서 필요한 기초 체력을
+          하나씩 만들어가고 있습니다.
+
+        </p>
+
+
+      </div>
+
+
+
+      <div class="competency-grid">
+
+
+        <!-- 01 -->
+
+        <article class="competency-card reveal">
+
+
+          <div class="competency-top">
+
+            <div class="competency-icon">
+              📊
+            </div>
+
+            <div class="competency-number">
+              01
+            </div>
+
+          </div>
+
+
+          <h3>
+            금융상품과 시장구조 이해
+          </h3>
+
+
+          <p>
+
+            주식뿐 아니라 채권,
+            선물·옵션·선도,
+            구조화상품과 포트폴리오까지
+            금융상품별 수익과 위험 구조를
+            비교하며 공부했습니다.
+
+          </p>
+
+
+          <div class="competency-proof">
+
+            투자자산운용사 자격 보유
+
+          </div>
+
+
+        </article>
+
+
+
+        <!-- 02 -->
+
+        <article class="competency-card reveal">
+
+
+          <div class="competency-top">
+
+            <div class="competency-icon">
+              🧮
+            </div>
+
+            <div class="competency-number">
+              02
+            </div>
+
+          </div>
+
+
+          <h3>
+            포트폴리오와 위험을 수치로 보는 시각
+          </h3>
+
+
+          <p>
+
+            CAPM·APT,
+            샤프지수·트레이너지수·젠센알파,
+            듀레이션·볼록성,
+            VaR와 위험관리 등을 학습하며
+            투자성과를 수치로 해석하는
+            기초를 쌓았습니다.
+
+          </p>
+
+
+          <div class="competency-proof">
+
+            투자론 · 자산운용 · 위험관리 학습
+
+          </div>
+
+
+        </article>
+
+
+
+        <!-- 03 -->
+
+        <article class="competency-card reveal">
+
+
+          <div class="competency-top">
+
+            <div class="competency-icon">
+              🌏
+            </div>
+
+            <div class="competency-number">
+              03
+            </div>
+
+          </div>
+
+
+          <h3>
+            거시경제를 시장과 연결하는 능력
+          </h3>
+
+
+          <p>
+
+            금리와 통화량,
+            CPI·PPI·PCE,
+            양적완화와 긴축,
+            환율과 통화정책 등이
+            금융시장에 어떤 영향을 주는지
+            구조적으로 연결해 학습했습니다.
+
+          </p>
+
+
+          <div class="competency-proof">
+
+            금융사관학교 국제경제 과정 수료
+
+          </div>
+
+
+        </article>
+
+
+
+        <!-- 04 -->
+
+        <article class="competency-card reveal">
+
+
+          <div class="competency-top">
+
+            <div class="competency-icon">
+              💻
+            </div>
+
+            <div class="competency-number">
+              04
+            </div>
+
+          </div>
+
+
+          <h3>
+            데이터를 근거로 문제를 정리하는 습관
+          </h3>
+
+
+          <p>
+
+            경영과학,
+            Python 기초,
+            핸드 시뮬레이션과
+            대기행렬 문제를 학습하며
+            복잡한 문제를 변수와 숫자로
+            나누어 분석하는 훈련을 하고 있습니다.
+
+          </p>
+
+
+          <div class="competency-proof">
+
+            경영과학 · Python · 시뮬레이션
+
+          </div>
+
+
+        </article>
+
+
+
+        <!-- 05 -->
+
+        <article class="competency-card reveal">
+
+
+          <div class="competency-top">
+
+            <div class="competency-icon">
+              📚
+            </div>
+
+            <div class="competency-number">
+              05
+            </div>
+
+          </div>
+
+
+          <h3>
+            스스로 학습전략을 개선하는 능력
+          </h3>
+
+
+          <p>
+
+            부족한 학습방식을 그대로 반복하지 않고
+            시간 관리와 공부 방법을 다시 설계하여
+            학업 성취도를 단계적으로 높였습니다.
+
+          </p>
+
+
+          <div class="competency-proof">
+
+            2026년 1학기 · 4.5 / 4.5
+
+          </div>
+
+
+        </article>
+
+
+
+        <!-- 06 -->
+
+        <article class="competency-card reveal">
+
+
+          <div class="competency-top">
+
+            <div class="competency-icon">
+              🤝
+            </div>
+
+            <div class="competency-number">
+              06
+            </div>
+
+          </div>
+
+
+          <h3>
+            팀원과 리더 양쪽의 관점을 경험
+          </h3>
+
+
+          <p>
+
+            지방시대 서포터즈에서
+            팀원과 팀장을 모두 경험하며
+            콘텐츠 기획,
+            역할 분담,
+            의견 조율과 프로젝트 진행을
+            직접 수행했습니다.
+
+          </p>
+
+
+          <div class="competency-proof">
+
+            지방시대 서포터즈 · 2년 활동
+
+          </div>
+
+
+        </article>
+
+
+
+        <!-- 07 -->
+
+        <article class="competency-card reveal">
+
+
+          <div class="competency-top">
+
+            <div class="competency-icon">
+              ⚓
+            </div>
+
+            <div class="competency-number">
+              07
+            </div>
+
+          </div>
+
+
+          <h3>
+            책임감과 현장 실행력
+          </h3>
+
+
+          <p>
+
+            해병대 제2사단 말도에서
+            수송병으로 복무하며
+            제한된 환경에서도
+            맡은 임무를 정확히 수행하고
+            조직 안에서 역할을 다하는 태도를 배웠습니다.
+
+          </p>
+
+
+          <div class="competency-proof">
+
+            해병대 병장 만기 전역
+
+          </div>
+
+
+        </article>
+
+
+
+        <!-- 08 -->
+
+        <article class="competency-card reveal">
+
+
+          <div class="competency-top">
+
+            <div class="competency-icon">
+              🎯
+            </div>
+
+            <div class="competency-number">
+              08
+            </div>
+
+          </div>
+
+
+          <h3>
+            목표를 장기 계획으로 바꾸는 습관
+          </h3>
+
+
+          <p>
+
+            자격증 하나에 그치지 않고
+            전공 학습,
+            금융 자격,
+            국제경제,
+            투자분석 능력을 서로 연결해
+            금융권 진로에 필요한 역량을
+            단계적으로 쌓고 있습니다.
+
+          </p>
+
+
+          <div class="competency-proof">
+
+            금융 전문성 중심의 장기 커리어 설계
+
+          </div>
+
+
+        </article>
+
+
+
+        <!-- 09 -->
+
+        <article class="competency-card reveal">
+
+
+          <div class="competency-top">
+
+            <div class="competency-icon">
+              🔎
+            </div>
+
+            <div class="competency-number">
+              09
+            </div>
+
+          </div>
+
+
+          <h3>
+            모르는 것을 정확히 확인하는 태도
+          </h3>
+
+
+          <p>
+
+            투자 판단이나 계산 문제에서도
+            직관만으로 결론 내리기보다
+            공식과 전제,
+            숫자의 의미를 확인한 뒤
+            결론을 도출하려고 합니다.
+
+          </p>
+
+
+          <div class="competency-proof">
+
+            정확성과 근거 중심의 문제 해결
+
+          </div>
+
+
+        </article>
+
+
+      </div>
+
+
+    </div>
+
+
+  </section>
+
+
+
+  <!-- ======================================================
+       CAREER
+  ======================================================= -->
+
+  <section
+    class="section"
+    id="career"
+  >
+
+
+    <div class="container">
+
+
+      <div class="section-label">
+        03 / CAREER DIRECTION
+      </div>
+
+
+      <h2 class="section-title">
+
+        내가 금융을 바라보는
+
+        <br>
+
+        <em>
+          두 가지 방향.
+        </em>
+
+      </h2>
+
+
+
+      <div class="career-grid">
+
+
+        <!-- MIRAE ASSET -->
+
+        <a
+          class="career-card career-dark reveal"
+          href="https://securities.miraeasset.com/main.do"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+
+
+          <div class="career-head">
+
+
+            <div class="career-icon">
+              📈
+            </div>
+
+
+            <div class="external-arrow">
+              ↗
+            </div>
+
+
+          </div>
+
+
+
+          <div class="career-label">
+
+            CAREER GOAL 01
+
+          </div>
+
+
+          <h3>
+
+            미래에셋증권
+
+            <br>
+
+            Fund Manager
+
+          </h3>
+
+
+          <p>
+
+            기업과 산업,
+            거시경제를 분석해
+            투자 아이디어를 실제
+            투자 의사결정으로 연결하는
+            펀드매니저가 되는 것이 목표입니다.
+
+            단순히 종목을 고르는 사람이 아니라
+            수익과 위험을 함께 관리할 수 있는
+            운용역으로 성장하고 싶습니다.
+
+          </p>
+
+
+        </a>
+
+
+
+        <!-- FSS -->
+
+        <a
+          class="career-card career-light reveal"
+          href="https://fss.or.kr/fss/main/main.do?menuNo=200000"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+
+
+          <div class="career-head">
+
+
+            <div class="career-icon">
+              🏦
+            </div>
+
+
+            <div class="external-arrow">
+              ↗
+            </div>
+
+
+          </div>
+
+
+
+          <div class="career-label">
+
+            CAREER GOAL 02
+
+          </div>
+
+
+          <h3>
+
+            금융감독원
+
+          </h3>
+
+
+          <p>
+
+            금융회사의 건전성,
+            금융소비자 보호와
+            금융시장 신뢰를 높이는 업무에도
+            관심이 있습니다.
+
+            시장을 이해하는 전문성을
+            공공적인 금융감독 역할로 연결하는 것 역시
+            제가 고민하고 있는 중요한 진로입니다.
+
+          </p>
+
+
+        </a>
+
+
+      </div>
+
+
+    </div>
+
+
+  </section>
+
+
+
+  <!-- ======================================================
+       JOURNEY
+  ======================================================= -->
+
+  <section
+    class="section"
+    id="journey"
+  >
+
+
+    <div class="container journey-grid">
+
+
+      <div class="journey-side reveal">
+
+
+        <div class="section-label">
+          04 / JOURNEY
+        </div>
+
+
+        <h2 class="section-title">
+
+          지금까지
+
+          <br>
+
+          <em>
+            쌓아온 것들.
+          </em>
+
+        </h2>
+
+
+
+        <div class="journey-message">
+
+
+          <strong>
+            “
+          </strong>
+
+
+          <p>
+
+            자격증 하나,
+            성적 하나보다
+
+            그 결과를 만들기 위해
+            어떤 방식으로 성장했는지를
+            더 중요하게 생각합니다.
+
+          </p>
+
+
+        </div>
+
+
+      </div>
+
+
+
+      <div class="timeline">
+
+
+
+        <div class="timeline-item reveal">
+
+
+          <div class="timeline-dot"></div>
+
+
+          <div class="timeline-label">
+
+            UNIVERSITY
+
+          </div>
+
+
+          <h3>
+
+            청주대학교 경영학과
+
+          </h3>
+
+
+          <p>
+
+            경영학을 전공하며
+            투자론,
+            금융,
+            경영전략,
+            생산관리,
+            경영과학 등
+
+            기업과 금융시장을 이해하기 위한
+            기반을 학습하고 있습니다.
+
+          </p>
+
+
+        </div>
+
+
+
+        <div class="timeline-item reveal">
+
+
+          <div class="timeline-dot"></div>
+
+
+          <div class="timeline-label">
+
+            CERTIFICATE
+
+          </div>
+
+
+          <h3>
+
+            투자자산운용사
+
+          </h3>
+
+
+          <p>
+
+            증권분석,
+            채권,
+            파생상품,
+            포트폴리오,
+            자산운용과 위험관리 등에 대한
+            학습을 거쳐 자격을 취득했습니다.
+
+          </p>
+
+
+        </div>
+
+
+
+        <div class="timeline-item reveal">
+
+
+          <div class="timeline-dot"></div>
+
+
+          <div class="timeline-label">
+
+            FINANCE EDUCATION
+
+          </div>
+
+
+          <h3>
+
+            금융사관학교 과정 수료
+
+          </h3>
+
+
+          <p>
+
+            국제경제와 금융시장에 대한
+            교육을 통해
+
+            금리,
+            통화정책,
+            환율,
+            글로벌 경제 흐름을
+            금융시장과 연결해 이해하는
+            훈련을 했습니다.
+
+          </p>
+
+
+        </div>
+
+
+
+        <div class="timeline-item reveal">
+
+
+          <div class="timeline-dot"></div>
+
+
+          <div class="timeline-label">
+
+            ACADEMIC GROWTH
+
+          </div>
+
+
+          <h3>
+
+            2026년 1학기
+
+            ·
+
+            4.5 / 4.5
+
+          </h3>
+
+
+          <p>
+
+            시행착오 이후
+            학습방법과 목표를 다시 설계하고
+
+            꾸준히 관리하여
+            한 학기 전 과목 만점 성적을
+            달성했습니다.
+
+          </p>
+
+
+        </div>
+
+
+
+        <div class="timeline-item reveal">
+
+
+          <div class="timeline-dot"></div>
+
+
+          <div class="timeline-label">
+
+            LEADERSHIP
+
+          </div>
+
+
+          <h3>
+
+            지방시대 서포터즈
+
+          </h3>
+
+
+          <p>
+
+            2년간 팀원과 팀장 역할을
+            모두 경험하며
+
+            콘텐츠 기획,
+            역할분담,
+            일정관리,
+            의견조율과 프로젝트 운영을
+            경험했습니다.
+
+          </p>
+
+
+        </div>
+
+
+
+        <div class="timeline-item reveal">
+
+
+          <div class="timeline-dot"></div>
+
+
+          <div class="timeline-label">
+
+            MILITARY
+
+          </div>
+
+
+          <h3>
+
+            해병대 제2사단 말도
+
+            ·
+
+            수송병
+
+          </h3>
+
+
+          <p>
+
+            수송병으로 복무한 뒤
+            병장으로 만기 전역했습니다.
+
+            군 복무를 통해
+            책임감,
+            조직생활,
+            맡은 임무를 끝까지 수행하는
+            실행력을 배웠습니다.
+
+          </p>
+
+
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+
+  </section>
+
+
+
+  <!-- ======================================================
+       LIFE
+  ======================================================= -->
+
+  <section
+    class="section life-section"
+    id="life"
+  >
+
+
+    <div class="container">
+
+
+      <div class="section-label">
+
+        05 / OUTSIDE FINANCE
+
+      </div>
+
+
+      <h2 class="section-title">
+
+        숫자와 시장 밖에서
+
+        <br>
+
+        <em>
+          나를 채우는 것들.
+        </em>
+
+      </h2>
+
+
+
+      <div class="life-grid">
+
+
+
+        <!-- MUSIC -->
+
+        <article class="life-card music-card reveal">
+
+
+          <div class="life-icon">
+
+            🎧
+
+          </div>
+
+
+          <div class="life-content">
+
+
+            <div class="life-label">
+
+              MUSIC
+
+            </div>
+
+
+            <h3>
+
+              R&B & HIP-HOP
+
+            </h3>
+
+
+            <p>
+
+              음악 감상을 좋아하고
+
+              그중에서도
+              R&B와 힙합을
+              가장 자주 듣습니다.
+
+              혼자 생각을 정리하거나
+              이동할 때
+
+              음악을 듣는 시간을
+              좋아합니다.
+
+            </p>
+
+
+
+            <div class="artist-tags">
+
+
+              <span>
+
+                JUSTHIS
+
+              </span>
+
+
+              <span>
+
+                Paul Blanco
+
+              </span>
+
+
+              <span>
+
+                R&B
+
+              </span>
+
+
+              <span>
+
+                HIP-HOP
+
+              </span>
+
+
+            </div>
+
+
+          </div>
+
+
+        </article>
+
+
+
+        <!-- GAME -->
+
+        <article class="life-card reveal">
+
+
+          <div class="life-icon">
+
+            🎮
+
+          </div>
+
+
+          <div class="life-content">
+
+
+            <div class="life-label">
+
+              GAME
+
+            </div>
+
+
+            <h3>
+
+              League of Legends
+
+            </h3>
+
+
+            <p>
+
+              전략과 순간적인 판단,
+
+              그리고 팀 플레이가
+              동시에 필요한
+
+              리그 오브 레전드를 즐깁니다.
+
+            </p>
+
+
+          </div>
+
+
+        </article>
+
+
+
+        <!-- MOVIE -->
+
+        <article class="life-card reveal">
+
+
+          <div class="life-icon">
+
+            🎬
+
+          </div>
+
+
+          <div class="life-content">
+
+
+            <div class="life-label">
+
+              MOVIE
+
+            </div>
+
+
+            <h3>
+
+              Romance
+
+            </h3>
+
+
+            <p>
+
+              여러 장르 중에서도
+
+              인물의 감정과 관계,
+              이야기에 몰입할 수 있는
+
+              로맨스 영화를 좋아합니다.
+
+            </p>
+
+
+          </div>
+
+
+        </article>
+
+
+      </div>
+
+
+    </div>
+
+
+  </section>
+
+
+
+  <!-- ======================================================
+       PHILOSOPHY
+  ======================================================= -->
+
+  <section class="philosophy">
+
+
+    <div class="container">
+
+
+      <div class="philosophy-card reveal">
+
+
+        <div class="philosophy-label">
+
+          MY PHILOSOPHY
+
+        </div>
+
+
+
+        <blockquote>
+
+          누구보다 느리더라도,
+
+          <br>
+
+          <em>
+            확실하고 완벽하게
+          </em>
+
+          <br>
+
+          꿈을 이뤄내는 것.
+
+        </blockquote>
+
+
+
+        <p class="philosophy-note">
+
+          남보다 빨리 가는 것보다
+          방향을 잃지 않는 것이
+          중요하다고 생각합니다.
+
+          부족한 부분을 하나씩 채우며
+          결국 제가 원하는 위치에 도달하는 것이
+          저의 방식입니다.
+
+        </p>
+
+
+      </div>
+
+
+    </div>
+
+
+  </section>
+
+
+
+  <!-- ======================================================
+       CONTACT
+  ======================================================= -->
+
+  <section
+    class="contact-section"
+    id="contact"
+  >
+
+
+    <div class="container reveal">
+
+
+      <div class="section-label">
+
+        06 / CONTACT
+
+      </div>
+
+
+
+      <h2 class="contact-title">
+
+        좋은 기회와 새로운 경험은
+
+        <br>
+
+        언제나 환영합니다.
+
+      </h2>
+
+
+
+      <p class="contact-copy">
+
+        금융 · 증권 · 투자 · 자산운용 분야에서
+        더 많은 경험을 쌓고
+
+        다양한 사람들과 함께
+        성장하고 싶습니다.
+
+      </p>
+
+
+
+      <div class="contact-grid">
+
+
+
+        <!-- PHONE -->
+
+        <a
+          class="contact-card"
+          href="tel:01053709814"
+        >
+
+
+          <div class="contact-icon">
+
+            📱
+
+          </div>
+
+
+          <small>
+
+            PHONE
+
+          </small>
+
+
+          <strong>
+
+            010-5370-9814
+
+          </strong>
+
+
+        </a>
+
+
+
+        <!-- EMAIL -->
+
+        <a
+          class="contact-card"
+          href="mailto:dkdldjsaos44@naver.com"
+        >
+
+
+          <div class="contact-icon">
+
+            ✉️
+
+          </div>
+
+
+          <small>
+
+            EMAIL
+
+          </small>
+
+
+          <strong>
+
+            dkdldjsaos44@naver.com
+
+          </strong>
+
+
+        </a>
+
+
+
+        <!-- INSTAGRAM -->
+
+        <a
+          class="contact-card"
+          href="https://www.instagram.com/xhinxeongxin/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+
+
+          <div class="contact-icon">
+
+            📷
+
+          </div>
+
+
+          <small>
+
+            INSTAGRAM
+
+          </small>
+
+
+          <strong>
+
+            @xhinxeongxin
+
+          </strong>
+
+
+        </a>
+
+
+      </div>
+
+
+
+      <!-- ==================================================
+           GREETING BUTTON
+      =================================================== -->
+
+      <div class="greeting-area">
+
+
+        <button
+          id="greetingButton"
+          class="greeting-button"
+          type="button"
+        >
+
+          👏 인사하기
+
+        </button>
+
+
+
+        <div
+          id="greetingResult"
+          class="greeting-result"
+          aria-live="polite"
+        >
+
+
+          <div
+            id="clapCounter"
+            class="greeting-count"
+          >
+
+            박수 0번
+
+          </div>
+
+
+          <div class="greeting-message">
+
+            방문해주셔서 감사합니다!
+
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+
+  </section>
+
+
+
+  <!-- ======================================================
+       FOOTER
+  ======================================================= -->
+
+  <footer>
+
+
+    <div class="container">
+
+
+      <div class="footer-name">
+
+        SHIN JEONG MIN
+
+      </div>
+
+
+
+      <div class="footer-contact">
+
+
+        <a href="tel:01053709814">
+
+          010-5370-9814
+
+        </a>
+
+
+        <a href="mailto:dkdldjsaos44@naver.com">
+
+          dkdldjsaos44@naver.com
+
+        </a>
+
+
+        <a
+          href="https://www.instagram.com/xhinxeongxin/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+
+          @xhinxeongxin
+
+        </a>
+
+
+      </div>
+
+
+
+      <div class="copyright">
+
+        PERSONAL BRAND PORTFOLIO
+
+        ·
+
+        © 2026 SHIN JEONG MIN
+
+      </div>
+
+
+    </div>
+
+
+  </footer>
+
+
+
+  <!-- ======================================================
+       JAVASCRIPT
+  ======================================================= -->
+
+  <script>
+
+
+    /* ---------------------------------------------------------
+       1. SCROLL REVEAL
+    --------------------------------------------------------- */
+
+    const revealItems =
+      document.querySelectorAll(
+        ".reveal"
+      );
+
+
+    if (
+
+      "IntersectionObserver"
+      in window
+
+      &&
+
+      !window
+        .matchMedia(
+          "(prefers-reduced-motion: reduce)"
+        )
+        .matches
+
+    ) {
+
+
+      const observer =
+        new IntersectionObserver(
+
+          (entries) => {
+
+
+            entries.forEach(
+
+              (entry) => {
+
+
+                if (
+                  entry.isIntersecting
+                ) {
+
+
+                  entry
+                    .target
+                    .classList
+                    .add(
+                      "visible"
+                    );
+
+
+                  observer
+                    .unobserve(
+                      entry.target
+                    );
+
+
+                }
+
+
+              }
+
+            );
+
+
+          },
+
+          {
+
+            threshold:
+              0.12
+
+          }
+
+        );
+
+
+      revealItems
+        .forEach(
+
+          (item) => {
+
+            observer
+              .observe(
+                item
+              );
+
+          }
+
+        );
+
+
+    }
+
+    else {
+
+
+      revealItems
+        .forEach(
+
+          (item) => {
+
+            item
+              .classList
+              .add(
+                "visible"
+              );
+
+          }
+
+        );
+
+
+    }
+
+
+
+    /* ---------------------------------------------------------
+       2. GREETING / CLAP COUNTER
+    --------------------------------------------------------- */
+
+    const greetingButton =
+      document
+        .getElementById(
+          "greetingButton"
+        );
+
+
+    const greetingResult =
+      document
+        .getElementById(
+          "greetingResult"
+        );
+
+
+    const clapCounter =
+      document
+        .getElementById(
+          "clapCounter"
+        );
+
+
+    let clapCount = 0;
+
+
+
+    greetingButton
+      .addEventListener(
+
+        "click",
+
+        () => {
+
+
+          /* 박수 횟수 +1 */
+
+          clapCount++;
+
+
+
+          /* 숫자 변경 */
+
+          clapCounter
+            .textContent =
+              `👏 박수 ${clapCount}번`;
+
+
+
+          /* 첫 클릭부터 감사문구 표시 */
+
+          greetingResult
+            .classList
+            .add(
+              "visible"
+            );
+
+
+
+          /* 버튼 문구도 현재 박수 횟수로 변경 */
+
+          greetingButton
+            .textContent =
+              `👏 박수 ${clapCount}번`;
+
+
+
+          /*
+            클릭할 때마다
+            살짝 눌리는 효과를
+            다시 실행
+          */
+
+          greetingButton
+            .animate(
+
+              [
+
+                {
+                  transform:
+                    "scale(1)"
+                },
+
+                {
+                  transform:
+                    "scale(0.94)"
+                },
+
+                {
+                  transform:
+                    "scale(1.04)"
+                },
+
+                {
+                  transform:
+                    "scale(1)"
+                }
+
+              ],
+
+              {
+
+                duration:
+                  260,
+
+                easing:
+                  "ease-out"
+
+              }
+
+            );
+
+
+        }
+
+      );
+
+
+  </script>
+
+
+</body>
+
+</html>
